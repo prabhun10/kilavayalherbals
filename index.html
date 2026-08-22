@@ -1,0 +1,1157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kilavayal Herbals | Natural Pain Relief & Massage Oil</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    :root {
+      --bg-cream: #8c0043;
+      --bg-card: #ffffff;
+      --bg-green-light: #e6ede8;
+      --bg-green-card: #d5e2d8;
+      --primary: #fff;
+      --primary-dark: #1b2f24;
+      --primary-light: #446853;
+      --accent-gold: #c29b38;
+      --text-dark: #1f2a24;
+      --text-muted: #fff;
+      --border-color: #e2ebe4;
+      --radius-sm: 8px;
+      --radius-md: 16px;
+      --radius-lg: 24px;
+      --radius-pill: 9999px;
+      --transition: all 0.3s ease;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: var(--bg-cream);
+      color: var(--text-dark);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    h1, h2, h3, h4, .serif-text {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-weight: 600;
+      color: var(--primary);
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1160px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* Badge & Micro Text */
+    .pill-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 16px;
+      font-size: 0.8rem;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      font-weight: 600;
+      
+    
+      border-radius: var(--radius-pill);
+      margin-bottom: 16px;
+    }
+
+    /* Buttons */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 12px 28px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      border-radius: var(--radius-pill);
+      transition: var(--transition);
+      cursor: pointer;
+      border: 1px solid transparent;
+    }
+
+    .btn-primary {
+      background-color: #b80058;
+      color: #fff;
+    }
+
+    .btn-primary:hover {
+      background-color: var(--primary-dark);
+      transform: translateY(-2px);
+    }
+
+    .btn-outline {
+     
+      color: #fff;
+      background: transparent;
+    }
+
+    .btn-outline:hover {
+      background-color: var(--primary);
+      color: #fff;
+    }
+
+    /* Header */
+    header {
+      padding: 20px 0;
+      background: #b80058;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      border-bottom: 1px solid rgba(0,0,0,0.04);
+      backdrop-filter: blur(8px);
+    }
+
+    .nav-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--primary);
+      font-family: 'Playfair Display', Georgia, serif;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 32px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: var(--text-muted);
+      transition: var(--transition);
+    }
+
+    .nav-links a:hover {
+      color: var(--primary);
+    }
+
+    .nav-contact {
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--primary);
+    }
+
+    /* Hero Section */
+    .hero {
+      padding: 60px 0 80px;
+      
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 48px;
+      align-items: center;
+    }
+
+    .hero-title {
+      font-size: 3.6rem;
+      line-height: 1.15;
+      margin-bottom: 20px;
+    }
+
+    .hero-description {
+      font-size: 1.1rem;
+      color: var(--text-muted);
+      margin-bottom: 32px;
+      max-width: 480px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-bottom: 48px;
+    }
+
+    .hero-stats {
+      display: flex;
+      gap: 40px;
+      border-top: 1px solid var(--border-color);
+      padding-top: 24px;
+    }
+
+    .stat-item h4 {
+      font-size: 1.5rem;
+      color: var(--primary);
+    }
+
+    .stat-item p {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    .hero-image-wrapper {
+      position: relative;
+    }
+
+    .hero-image-wrapper img {
+      border-radius: var(--radius-lg);
+      width: 100%;
+      height: 480px;
+      object-fit: cover;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.06);
+    }
+
+    .hero-image-badge {
+      position: absolute;
+      bottom: 24px;
+      left: 24px;
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(8px);
+      padding: 12px 20px;
+      border-radius: var(--radius-md);
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--primary);
+    }
+
+    /* Trust Strip */
+    .trust-strip {
+      
+      padding: 24px 0;
+      border-top: 1px solid var(--border-color);
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .trust-items {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 24px;
+    }
+
+    .trust-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--primary);
+    }
+
+    .trust-item i {
+      font-size: 1.1rem;
+      color: var(--accent-gold);
+    }
+
+    /* Section Headings */
+    .section-header {
+      text-align: center;
+      max-width: 640px;
+      margin: 0 auto 54px;
+    }
+
+    .section-header h2 {
+      font-size: 2.4rem;
+      margin-bottom: 12px;
+    }
+
+    .section-header p {
+      color: var(--text-muted);
+      font-size: 1rem;
+    }
+
+    /* Feature Cards Section */
+    .features-section {
+      padding: 80px 0;
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+    }
+
+    .feature-card {
+     
+      padding: 36px 28px;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border-color);
+      transition: var(--transition);
+    }
+
+    .feature-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 28px rgba(0,0,0,0.04);
+    }
+
+    .feature-icon {
+      width: 48px;
+      height: 48px;
+      background: black;
+      color: var(--primary);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+    }
+
+    .feature-card h3 {
+      font-size: 1.25rem;
+      margin-bottom: 10px;
+    }
+
+    .feature-card p {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    /* Pain Areas / Comfort Section */
+    .comfort-section {
+      padding: 80px 0;
+    }
+
+    .comfort-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 56px;
+      align-items: center;
+    }
+
+    .comfort-img {
+      border-radius: var(--radius-lg);
+      height: 480px;
+      width: 100%;
+      object-fit: cover;
+    }
+
+    .comfort-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      margin-top: 32px;
+    }
+
+    .comfort-item h4 {
+      font-size: 1.05rem;
+      margin-bottom: 4px;
+    }
+
+    .comfort-item p {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    /* Product Highlight Card */
+    .product-highlight {
+      padding: 60px 0;
+    }
+
+    .product-box {
+      background-color: #8c0043;
+      border-radius: var(--radius-lg);
+      padding: 48px;
+      display: grid;
+      grid-template-columns: 0.85fr 1.15fr;
+      gap: 48px;
+      align-items: center;
+    }
+
+    .product-box img {
+      border-radius: var(--radius-md);
+      height: 380px;
+      width: 100%;
+      object-fit: cover;
+    }
+
+    .product-price {
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--primary);
+      margin: 16px 0;
+    }
+
+    .product-price span {
+      font-size: 1rem;
+      font-weight: 400;
+      text-decoration: line-through;
+      color: var(--text-muted);
+      margin-left: 8px;
+    }
+
+    .product-checklist {
+      list-style: none;
+      margin-bottom: 32px;
+    }
+
+    .product-checklist li {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.95rem;
+      margin-bottom: 10px;
+      color: #fff;
+    }
+
+    .product-checklist i {
+      color: var(--primary);
+      font-size: 0.9rem;
+    }
+
+    /* Steps Section */
+    .steps-section {
+      padding: 80px 0;
+      
+    }
+
+    .steps-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+      text-align: center;
+    }
+
+    .step-number {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: var(--accent-gold);
+      margin-bottom: 12px;
+    }
+
+    .step-card h3 {
+      font-size: 1.2rem;
+      margin-bottom: 8px;
+    }
+
+    .step-card p {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    /* Testimonials */
+    .reviews-section {
+      padding: 80px 0;
+    }
+
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+    }
+
+    .review-card {
+      background: #fff;
+      padding: 32px;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border-color);
+    }
+
+    .stars {
+      color: #e5a93b;
+      margin-bottom: 16px;
+      font-size: 0.9rem;
+    }
+
+    .review-card p {
+      font-size: 0.95rem;
+      color: var(--text-dark);
+      margin-bottom: 20px;
+      font-style: italic;
+    }
+
+    .reviewer-name {
+      font-weight: 700;
+      font-size: 0.95rem;
+    }
+
+    .reviewer-city {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    /* Brand / Heritage Section */
+    .brand-section {
+      padding: 80px 0;
+     
+    }
+
+    .brand-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 56px;
+      align-items: center;
+    }
+
+    .brand-img {
+      border-radius: var(--radius-lg);
+      height: 420px;
+      width: 100%;
+      object-fit: cover;
+    }
+
+    .brand-stats {
+      display: flex;
+      gap: 40px;
+      margin-top: 32px;
+    }
+
+    /* Enquiry Section */
+    .enquiry-section {
+      padding: 80px 0;
+       
+    }
+
+    .enquiry-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+       
+      padding: 48px;
+      border-radius: var(--radius-lg);
+    }
+
+    .enquiry-form {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .enquiry-form input,
+    .enquiry-form select {
+      width: 100%;
+      padding: 14px 18px;
+      border-radius: var(--radius-sm);
+      border: 1px solid rgba(40,68,53,0.15);
+      background: #fff;
+      font-family: inherit;
+      font-size: 0.95rem;
+      outline: none;
+    }
+
+    /* FAQ Section */
+    .faq-section {
+      padding: 80px 0;
+    }
+
+    .faq-container {
+      max-width: 760px;
+      margin: 0 auto;
+    }
+
+    .faq-item {
+      border-bottom: 1px solid var(--border-color);
+      padding: 20px 0;
+    }
+
+    .faq-question {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--primary);
+    }
+
+    .faq-answer {
+      margin-top: 12px;
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      display: none;
+    }
+
+    .faq-item.active .faq-answer {
+      display: block;
+    }
+
+    /* Contact Section */
+    .contact-section {
+      padding: 80px 0;
+       
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.2fr;
+      gap: 48px;
+	  color:white;
+    }
+
+    .contact-info-item {
+      display: flex;
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+
+    .contact-info-item i {
+      font-size: 1.2rem;
+      color: var(--primary);
+      margin-top: 4px;
+    }
+
+    .map-placeholder {
+      width: 100%;
+      height: 280px;
+      background: #e6ede8;
+      border-radius: var(--radius-md);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--primary);
+      font-weight: 500;
+      border: 1px dashed var(--primary-light);
+    }
+
+    /* Bottom CTA Strip */
+    .bottom-cta {
+      
+      padding: 80px 0;
+      text-align: center;
+    }
+
+    .bottom-cta h2 {
+      font-size: 2.6rem;
+      margin-bottom: 16px;
+    }
+
+    .bottom-cta p {
+      color: #fff;
+      margin-bottom: 28px;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #b80058;
+      color: #fff;
+      padding: 60px 0 30px;
+      font-size: 0.85rem;
+    }
+
+    .footer-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      padding-bottom: 30px;
+      margin-bottom: 30px;
+    }
+
+    .footer-logo {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 1.3rem;
+      color: #fff;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 24px;
+    }
+
+    .footer-disclaimer {
+      text-align: center;
+      font-size: 0.75rem;
+      line-height: 1.7;
+      max-width: 880px;
+      margin: 0 auto;
+      color: #fff;
+	  font-weight:bold;    
+	  }
+
+    /* Responsive Queries */
+    @media (max-width: 992px) {
+      .hero-grid,
+      .comfort-grid,
+      .product-box,
+      .brand-grid,
+      .enquiry-grid,
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+      .features-grid,
+      .steps-grid,
+      .reviews-grid {
+        grid-template-columns: 1fr;
+      }
+      .hero-title {
+        font-size: 2.8rem;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .nav-links, .nav-contact {
+        display: none;
+      }
+      .comfort-list {
+        grid-template-columns: 1fr;
+      }
+      .footer-content {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+      }
+    }
+	.wa-float {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    z-index: 60;
+    display: grid;
+    place-items: center;
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    background: #25D366;
+    color: #fff;
+    font-size: 26px;
+    box-shadow: var(--shadow-glow);
+    transition: transform .3s;
+}
+
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 60px;
+  height: 60px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  z-index: 9999;
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.whatsapp-float:hover {
+  background-color: #20ba5a;
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+
+.whatsapp-icon {
+  width: 34px;
+  height: 34px;
+}
+
+/* Mobile Responsive Adjustments */
+@media (max-width: 768px) {
+  .whatsapp-float {
+    width: 50px;
+    height: 50px;
+    bottom: 16px;
+    right: 16px;
+  }
+  
+  .whatsapp-icon {
+    width: 28px;
+    height: 28px;
+  }
+}
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container nav-wrapper">
+	<img src="logo.png"  class="logo"  width="50" />
+       
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#benefits">Benefits</a></li>
+        <li><a href="#product">Product</a></li>
+        <li><a href="#how-to-use">How to Use</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+      <div class="nav-contact">+91 91507 55315</div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <div class="pill-badge"><i class="fa-solid fa-leaf"></i> 100% Herbal & Authentic</div>
+        <h1 class="hero-title">Pain Relief <br> Massage Oil.</h1>
+        <p class="hero-description">
+          Natural healing rooted in authentic traditional wisdom. A handcrafted herbal formula created to ease pain and revive your body's energy.
+        </p>
+        <div class="hero-actions">
+          <a href="https://wa.me/919150755315?text=Hi!%20I%20would%20like%20to%20place%20an%20order" class="btn btn-primary">Buy Now</a>
+          <a href="https://wa.me/919150755315?text=Hi!%20I%20would%20like%20to%20place%20an%20order" class="btn btn-outline" 
+		  style="background:#25D366;"><i class="fa-brands fa-whatsapp"></i> Order on WhatsApp</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <h4>100%</h4>
+            <p>Herbal Formulation</p>
+          </div>
+          <div class="stat-item">
+            <h4>4.8★</h4>
+            <p>Customer Rating</p>
+          </div>
+          <div class="stat-item">
+            <h4>296+</h4>
+            <p>Happy Families</p>
+          </div>
+        </div>
+      </div>
+      <div class="hero-image-wrapper">
+        <img src="banner2.png" alt="Herbal Pain Relief Oil Bottle">
+       
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust Strip -->
+  <div class="trust-strip">
+    <div class="container trust-items">
+      <div class="trust-item"><i class="fa-solid fa-seedling"></i> 100% Natural Herbs</div>
+      <div class="trust-item"><i class="fa-solid fa-mortar-pestle"></i> Traditional Recipe</div>
+      <div class="trust-item"><i class="fa-solid fa-shield-halved"></i> Zero Side Effects</div>
+      <div class="trust-item"><i class="fa-solid fa-hands-holding-circle"></i> Pure Essential Oils</div>
+    </div>
+  </div>
+
+  <!-- 3 Highlights Section -->
+  <section class="features-section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <div class="pill-badge">Traditional Craft</div>
+        <h2>Herbal wisdom, prepared the honest way</h2>
+        <p>Pure whole herbs cooked slow in virgin oils to extract the purest therapeutic active compounds.</p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fa-solid fa-leaf"></i></div>
+          <h3>Authentic Ingredients</h3>
+          <p>Hand-selected medicinal herbs cultivated cleanly and picked at peak botanical maturity.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fa-solid fa-clock-rotate-left"></i></div>
+          <h3>Slow Herbal Cooking</h3>
+          <p>Prepared using ancient boiling protocols over mild heat to retain full bio-availability.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fa-solid fa-spa"></i></div>
+          <h3>Fast Deep Massage</h3>
+          <p>Lightweight non-greasy absorption that penetrates deeper into stiff joints and sore muscles.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Comfort / Pain Areas Section -->
+  <section class="comfort-section" id="benefits">
+    <div class="container comfort-grid">
+      <img src="side.png" alt="Massage Therapy" class="comfort-img">
+      <div>
+        <div class="pill-badge">Targeted Relief</div>
+        <h2>Comfort where your body hurts most</h2>
+        <p class="hero-description">A soothing restorative formula crafted to alleviate everyday pains and persistent joint strains.</p>
+        
+        <div class="comfort-list">
+          <div class="comfort-item">
+            <h4>Back & Neck Relief</h4>
+            <p>Relieves stiffness from posture stress.</p>
+          </div>
+          <div class="comfort-item">
+            <h4>Knee & Joints</h4>
+            <p>Improves mobility and reduces friction.</p>
+          </div>
+          <div class="comfort-item">
+            <h4>Shoulder Stiffness</h4>
+            <p>Eases heavy tension across upper joints.</p>
+          </div>
+          <div class="comfort-item">
+            <h4>Muscle Fatigue</h4>
+            <p>Calms post-workout or manual labor tiredness.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product Showcase Section -->
+  <section class="product-highlight" id="product">
+    <div class="container">
+      <div class="product-box">
+        <img src="side_banner2.png" alt="Herbal Oil Product">
+        <div>
+          <div class="pill-badge">Limited Batch</div>
+          <h2>Herbal Pain Relief & Massage Oil</h2>
+          <div class="product-price">₹199  </div>
+          <ul class="product-checklist">
+            <li><i class="fa-solid fa-check"></i> Fast absorption without greasy residue</li>
+            <li><i class="fa-solid fa-check"></i> 100% chemical & preservative free</li>
+            <li><i class="fa-solid fa-check"></i> Suitable for regular daily use for all ages</li>
+            <li><i class="fa-solid fa-check"></i> 100ml easy applicator glass bottle</li>
+          </ul>
+          <div class="hero-actions">
+            <a href="https://wa.me/9150755315?text=Hi!%20I%20would%20like%20to%20place%20an%20order" class="btn btn-primary">Buy Now</a>
+            <a href="https://wa.me/9150755315?text=Hi!%20I%20would%20like%20to%20place%20an%20order" class="btn btn-outline"><i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How to use -->
+  <section class="steps-section" id="how-to-use">
+    <div class="container">
+      <div class="section-header">
+        <div class="pill-badge">Easy Ritual</div>
+        <h2>Three simple steps</h2>
+      </div>
+
+      <div class="steps-grid">
+        <div class="step-card">
+          <div class="step-number">01</div>
+          <h3>Take a Few Drops</h3>
+          <p>Pour 5-10 drops onto your palm or directly over the affected zone.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-number">02</div>
+          <h3>Massage Gently</h3>
+          <p>Rub in circular motions for 5 to 7 minutes until warmth develops.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-number">03</div>
+          <h3>Let it Absorb</h3>
+          <p>Leave on for at least 30 minutes or overnight for deepest relief.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews Section -->
+  <section class="reviews-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="pill-badge">Customer Trust</div>
+        <h2>Rated 4.8 by 296 families</h2>
+      </div>
+
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p>"Using it daily for my mother's joint pain. There is a visible difference in her morning mobility."</p>
+          <div class="reviewer-name">Ramesh K.</div>
+          <div class="reviewer-city">Chennai</div>
+        </div>
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p>"The natural herbal scent is soothing and it absorbs quickly without staining my clothes."</p>
+          <div class="reviewer-name">Anitha M.</div>
+          <div class="reviewer-city">Madurai</div>
+        </div>
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p>"Great product for lower back stiffness after long work hours sitting at my desk."</p>
+          <div class="reviewer-name">Praveen S.</div>
+          <div class="reviewer-city">Coimbatore</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Brand Heritage -->
+  <section class="brand-section">
+    <div class="container brand-grid">
+      <img src="kil.jpg" alt="Herbal Ingredients" class="brand-img">
+      <div>
+        <div class="pill-badge">Heritage</div>
+        <h2>Kilavayal Herbals — Maruthuva Sevai</h2>
+        <p class="hero-description">
+          Carrying forward generations of traditional South Indian herbal formulations, prepared with clean intent and pure native botanicals.
+        </p>
+        <div class="brand-stats">
+          <div class="stat-item">
+            <h4>10+</h4>
+            <p>Years of Practice</p>
+          </div>
+          <div class="stat-item">
+            <h4>1,000+</h4>
+            <p>Bottles Shipped</p>
+          </div>
+          <div class="stat-item">
+            <h4>Pure</h4>
+            <p>Ayurvedic Blend</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- B2B Enquiry Section -->
+  <section class="enquiry-section">
+    <div class="container enquiry-grid">
+      <div>
+        <div class="pill-badge">Wholesale & Partner</div>
+        <h2>Sales Man & Distributor Enquiry</h2>
+        <p class="hero-description">Interested in partnering or becoming an authorized regional distributor for Kilavayal Herbals?</p>
+        <ul class="product-checklist">
+          <li><i class="fa-solid fa-check"></i> High margins for retailers</li>
+          <li><i class="fa-solid fa-check"></i> Marketing & promotional support</li>
+          <li><i class="fa-solid fa-check"></i> Direct factory shipping</li>
+        </ul>
+      </div>
+      
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="faq-section" id="faq">
+    <div class="container faq-container">
+      <div class="section-header">
+        <div class="pill-badge">Questions</div>
+        <h2>Questions, answered</h2>
+      </div>
+
+      <div class="faq-item active">
+        <div class="faq-question">How often should I use this oil? <i class="fa-solid fa-chevron-down"></i></div>
+        <div class="faq-answer">For optimal relief, apply 1-2 times daily, preferably once before bedtime.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">Does it have any side effects? <i class="fa-solid fa-chevron-down"></i></div>
+        <div class="faq-answer">No, it is made purely with traditional herbs and natural oils without chemical additives.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">Is it sticky or greasy? <i class="fa-solid fa-chevron-down"></i></div>
+        <div class="faq-answer">No, it has a light consistency that absorbs rapidly into the skin when massaged.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">How long does shipping take? <i class="fa-solid fa-chevron-down"></i></div>
+        <div class="faq-answer">Orders are dispatched within 24 hours and delivered in 3-5 business days across India.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <div class="pill-badge">Get in Touch</div>
+        <h2>We are one message away</h2>
+      </div>
+      
+      <div class="contact-grid">
+        <div>
+          <div class="contact-info-item">
+            <i class="fa-solid fa-phone"></i>
+            <div>
+              <strong>Phone</strong>
+              <p>+91 91507 55315</p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <i class="fa-solid fa-envelope"></i>
+            <div>
+              <strong>Email</strong>
+              <p>support@kilavayalherbals.com</p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <div>
+              <strong>Location</strong>
+              <p>Kilavayal Post,Singampunari T.k,Sivagangai (D.T), Tamil Nadu, India</p>
+            </div>
+          </div>
+        </div>
+        <div class="map-placeholder">
+        
+		 <iframe width="100" height="260" src="https://www.google.com/maps?q=Kilavayal+Post%2CSingampunari+T.k%2CSivagangai+%28D.T%29%2C+Tamil+Nadu%2C+India&amp;z=13&amp;t=m&amp;hl=en&amp;output=embed" style="border:0;display:block;width:600px;max-width:100%;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Google Map of Kilavayal Post,Singampunari T.k,Sivagangai (D.T), Tamil Nadu, India"></iframe>
+		 <a href="https://sites.google.com/view/embed-maps/" style="position:absolute;left:8px;bottom:1px;z-index:999;height:10px;line-height:10px;font-family:Roboto,Arial,sans-serif;font-size:10px;font-weight:400;color:#5f6368;text-decoration:none;white-space:nowrap;opacity:.95;text-shadow:0 1px 1px rgba(255,255,255,.95);cursor:pointer;"></a>
+		 
+		  
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bottom CTA Banner -->
+  <section class="bottom-cta">
+    <div class="container">
+      <h2>Experience Natural Care with Kilavayal</h2>
+      <p>Join hundreds of satisfied families rediscovering pain-free, active living.</p>
+      <a href="https://wa.me/919150755315?text=Hi!%20I%20would%20like%20to%20place%20an%20order" class="btn btn-primary">Order Now</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo"><img src="logo.png" width="150" / > </div>
+        <div class="footer-links">
+          <a href="#about">About</a>
+          <a href="#benefits">Benefits</a>
+          <a href="#product">Product</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+      <p class="footer-disclaimer">
+        Disclaimer: This product is an external application herbal formulation based on traditional recipes. It is not intended to diagnose, treat, cure, or prevent any chronic disease. Consult your physician for persistent conditions.
+      </p>
+    </div>
+  </footer>
+  
+  <a href="https://wa.me/919150755315?text=Hello!%20I%20have%20a%20question." 
+   class="whatsapp-float" 
+   target="_blank" 
+   rel="noopener noreferrer" 
+   aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 32 32" class="whatsapp-icon">
+    <path fill="currentColor" d="M16 2a13 13 0 0 0-11.3 19.5L3 29l7.7-1.6A13 13 0 1 0 16 2zm0 23.6a10.6 10.6 0 0 1-5.4-1.5l-.4-.2-4 1 1-3.9-.3-.4A10.6 10.6 0 1 1 16 25.6zm5.8-7.9c-.3-.2-1.9-1-2.2-1.1s-.5-.2-.7.2-.8 1.1-1 1.3-.4.2-.7 0a9 9 0 0 1-2.6-1.6 10 10 0 0 1-1.8-2.3c-.2-.3 0-.5.1-.7s.3-.4.5-.6l.3-.5c.1-.2 0-.4 0-.5s-.7-1.7-1-2.3c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4s-1.2 1.2-1.2 2.9 1.3 3.3 1.4 3.5 2.5 3.9 6.1 5.4c.9.4 1.5.6 2 .8.9.3 1.7.2 2.3.1.7-.1 2.2-.9 2.5-1.8s.3-1.6.2-1.8c-.1-.1-.4-.2-.7-.3z"/>
+  </svg>
+</a>
+
+  <script>
+    // FAQ Toggle Interaction
+    document.querySelectorAll('.faq-question').forEach(item => {
+      item.addEventListener('click', () => {
+        const parent = item.parentElement;
+        parent.classList.toggle('active');
+      });
+    });
+  </script>
+</body>
+</html>
